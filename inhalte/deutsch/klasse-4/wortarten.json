@@ -1,0 +1,120 @@
+{
+  "klasse": 4,
+  "wortarten": {
+    "nomen": {
+      "name": "Nomen",
+      "farbe": "#2f6fd6",
+      "tipp": "Tipp: Kannst du der, die oder das davor setzen?",
+      "erklaerung": "Das ist ein Nomen. Du kannst der, die oder das davor setzen. Nomen schreibt man groß."
+    },
+    "verb": {
+      "name": "Verb",
+      "farbe": "#d33a2c",
+      "tipp": "Tipp: Kannst du ich, du oder er davor setzen? Sagt das Wort, was jemand tut?",
+      "erklaerung": "Das ist ein Verb. Es sagt, was jemand tut, und verändert sich: ich laufe, du läufst, er lief."
+    },
+    "adjektiv": {
+      "name": "Adjektiv",
+      "farbe": "#2e8b3e",
+      "tipp": "Tipp: Kannst du das Wort steigern? Oder passt es zwischen der und ein Nomen (der ... Hund)?",
+      "erklaerung": "Das ist ein Adjektiv. Es sagt, wie etwas ist. Man kann es steigern: groß, größer, am größten."
+    },
+    "artikel": {
+      "name": "Artikel",
+      "farbe": "#e0a800",
+      "tipp": "Tipp: Steht das Wort als Begleiter vor einem Nomen?",
+      "erklaerung": "Das ist ein Artikel. Er begleitet ein Nomen: der Baum, eine Blume."
+    },
+    "pronomen": {
+      "name": "Pronomen",
+      "farbe": "#8a4fbf",
+      "tipp": "Tipp: Kann das Wort für ein Nomen stehen, zum Beispiel für einen Namen?",
+      "erklaerung": "Das ist ein Pronomen. Es steht für ein Nomen: Tim lacht. Er lacht."
+    }
+  },
+  "stufen": [
+    {
+      "nummer": 1,
+      "name": "Grundformen",
+      "beschreibung": "Einfache Wörter erkennen",
+      "beispiel": "Hund, springen, groß",
+      "kisten": ["nomen", "verb", "adjektiv"],
+      "woerter": {
+        "nomen": ["Hund", "Schule", "Baum", "Fenster", "Freundin", "Tasche", "Apfel", "Fahrrad", "Garten", "Lehrerin", "Buch", "Wolke", "Brücke", "Zeitung", "Spiegel", "Kerze", "Wald", "Pferd", "Rucksack", "Mantel", "Insel", "Stadt", "Blume", "Geburtstag", "Kissen", "Maus", "Uhr", "Straße", "Löffel", "Ferien"],
+        "verb": ["springen", "lachen", "schreiben", "malen", "rennen", "schwimmen", "lesen", "singen", "bauen", "fliegen", "rufen", "tanzen", "kochen", "spielen", "klettern", "träumen", "helfen", "suchen", "finden", "erzählen", "waschen", "bellen", "trinken", "denken", "fragen", "antworten", "rechnen", "wohnen", "schlafen", "zeichnen"],
+        "adjektiv": ["groß", "klein", "laut", "leise", "schnell", "langsam", "bunt", "dunkel", "hell", "warm", "kalt", "freundlich", "lustig", "traurig", "müde", "stark", "schwach", "weich", "hart", "nass", "trocken", "glücklich", "mutig", "schwer", "leicht", "frech", "ruhig", "spannend", "neu", "alt"]
+      }
+    },
+    {
+      "nummer": 2,
+      "name": "Veränderte Wörter",
+      "beschreibung": "Mehrzahl, Verbformen und Steigerungen",
+      "beispiel": "Bäume, läuft, schneller",
+      "kisten": ["nomen", "verb", "adjektiv"],
+      "woerter": {
+        "nomen": ["Bäume", "Häuser", "Kinder", "Mäuse", "Bücher", "Äpfel", "Freunde", "Städte", "Vögel", "Hände", "Füße", "Blätter", "Brüder", "Zähne", "Wörter", "Nächte", "Länder", "Gläser", "Räder", "Züge"],
+        "verb": ["läuft", "sprang", "schreibt", "gesungen", "fliegt", "half", "liest", "gerannt", "schwimmt", "rief", "spielte", "malt", "trank", "gegessen", "denkst", "kletterst", "fand", "sucht", "wäscht", "schläft"],
+        "adjektiv": ["größer", "am schnellsten", "kleiner", "am höchsten", "wärmer", "kälter", "besser", "am besten", "schöner", "lustiger", "am stärksten", "dunkler", "heller", "am kältesten", "mutiger", "älter", "jünger", "am leisesten", "schwerer", "netter"]
+      }
+    },
+    {
+      "nummer": 3,
+      "name": "Wörter im Satz",
+      "beschreibung": "Der Satz verrät die Wortart",
+      "beispiel": "Das Laufen macht Spaß. Wir laufen schnell.",
+      "kisten": ["nomen", "verb", "adjektiv"],
+      "saetze": [
+        { "satz": "Das [Laufen] macht mir Spaß.", "wortart": "nomen" },
+        { "satz": "Wir [laufen] jeden Morgen zur Schule.", "wortart": "verb" },
+        { "satz": "Beim [Schwimmen] trage ich eine Brille.", "wortart": "nomen" },
+        { "satz": "Im Sommer [schwimmen] wir im See.", "wortart": "verb" },
+        { "satz": "Der [kleine] Hund bellt laut.", "wortart": "adjektiv" },
+        { "satz": "Die Katze schläft auf dem [weichen] Kissen.", "wortart": "adjektiv" },
+        { "satz": "Meine Schwester [liest] ein spannendes Buch.", "wortart": "verb" },
+        { "satz": "Das [Buch] liegt auf dem Tisch.", "wortart": "nomen" },
+        { "satz": "Ich esse gerne [süße] Erdbeeren.", "wortart": "adjektiv" },
+        { "satz": "Nach dem [Essen] spielen wir draußen.", "wortart": "nomen" },
+        { "satz": "Wir [essen] heute Nudeln.", "wortart": "verb" },
+        { "satz": "Der Wind ist heute sehr [stark].", "wortart": "adjektiv" },
+        { "satz": "Die Kinder [bauen] eine Sandburg.", "wortart": "verb" },
+        { "satz": "Ich habe ein [Geschenk] bekommen.", "wortart": "nomen" },
+        { "satz": "Opa erzählt eine [lustige] Geschichte.", "wortart": "adjektiv" },
+        { "satz": "Das [Singen] im Chor gefällt mir.", "wortart": "nomen" },
+        { "satz": "Mein Bruder [spielt] Fußball.", "wortart": "verb" },
+        { "satz": "Der Himmel ist heute [blau].", "wortart": "adjektiv" },
+        { "satz": "Die [Lehrerin] erklärt die Aufgabe.", "wortart": "nomen" },
+        { "satz": "Wir [fahren] mit dem Bus.", "wortart": "verb" },
+        { "satz": "Das [Malen] macht mich ruhig.", "wortart": "nomen" },
+        { "satz": "Am Abend wird es [dunkel].", "wortart": "adjektiv" },
+        { "satz": "Die [Freude] war riesig.", "wortart": "nomen" },
+        { "satz": "Das Wasser im See ist [kalt].", "wortart": "adjektiv" },
+        { "satz": "Der Vogel [baut] ein Nest.", "wortart": "verb" },
+        { "satz": "Mit dem [Fahrrad] fahre ich zur Schule.", "wortart": "nomen" },
+        { "satz": "Wir haben im Garten [gespielt].", "wortart": "verb" },
+        { "satz": "Der Zug ist [schneller] als das Auto.", "wortart": "adjektiv" },
+        { "satz": "Beim [Lesen] vergesse ich die Zeit.", "wortart": "nomen" },
+        { "satz": "Ich [lese] jeden Abend im Bett.", "wortart": "verb" }
+      ]
+    },
+    {
+      "nummer": 4,
+      "name": "Bonus: fünf Kisten",
+      "beschreibung": "Dazu kommen Artikel und Pronomen",
+      "beispiel": "der, eine, ich, wir",
+      "kisten": ["nomen", "verb", "adjektiv", "artikel", "pronomen"],
+      "woerter": {
+        "nomen": ["Hund", "Schule", "Fenster", "Tasche", "Garten", "Wolke", "Insel", "Kerze"],
+        "verb": ["springen", "lachen", "schreibt", "malt", "rief", "tanzen", "hilft", "kocht"],
+        "adjektiv": ["groß", "leise", "schneller", "bunt", "mutig", "weich", "am besten", "frech"],
+        "artikel": ["der", "die", "das", "ein", "eine", "einen", "dem", "einer"],
+        "pronomen": ["ich", "du", "er", "sie", "es", "wir", "ihr", "mich", "dir", "uns"]
+      }
+    }
+  ],
+  "arbeitsblatt": {
+    "woerterJeWortart": 5,
+    "woerterAusStufen": [1, 2],
+    "saetzeAusStufe": 3,
+    "anzahlSaetze": 8
+  }
+}

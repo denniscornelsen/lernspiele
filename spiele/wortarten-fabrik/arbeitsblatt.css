@@ -1,0 +1,77 @@
+body { font-size: 18px; }
+
+.steuerung {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 16px;
+  background: var(--flaeche);
+  border-bottom: 2px solid var(--rand);
+}
+.steuerung label { display: inline-flex; gap: 6px; align-items: center; font-size: 0.9rem; }
+.steuerung select, .steuerung input[type="number"] {
+  font: inherit; font-size: 0.9rem; padding: 6px 8px; border: 2px solid var(--rand); border-radius: 8px;
+}
+.steuerung input[type="number"] { width: 6em; }
+.tipp { max-width: 210mm; margin: 12px auto; padding: 0 16px; font-size: 0.85rem; color: var(--text-leise); }
+
+/* Das Blatt selbst: DIN A4 */
+.blatt {
+  background: #fff;
+  width: 210mm;
+  max-width: calc(100% - 32px);
+  min-height: 297mm;
+  margin: 16px auto 40px;
+  padding: 14mm 16mm;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  color: #000;
+  font-size: 13pt;
+}
+.blatt-kopf { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; border-bottom: 2px solid #000; padding-bottom: 6px; }
+.blatt-kopf h1 { font-size: 20pt; margin: 0; }
+.blatt-kopf .klein { font-size: 10pt; color: #444; text-align: right; }
+.name-zeile { display: flex; gap: 24px; margin: 12px 0 4px; }
+.name-zeile span { flex: 1; border-bottom: 1px solid #000; padding-top: 14px; font-size: 11pt; }
+.loesung-stempel { color: #c0392b; font-weight: 700; font-size: 14pt; border: 2px solid #c0392b; padding: 2px 10px; border-radius: 6px; display: inline-block; margin-top: 8px; }
+
+.aufgabe { margin-top: 18px; break-inside: avoid; }
+.aufgabe h2 { font-size: 14pt; margin: 0 0 8px; }
+.aufgabe h2 .nr { display: inline-block; width: 1.6em; height: 1.6em; line-height: 1.6em; text-align: center; border-radius: 50%; background: #000; color: #fff; font-size: 11pt; margin-right: 6px; }
+
+.wortkasten {
+  border: 2px dashed #888;
+  border-radius: 10px;
+  padding: 10px 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  font-size: 14pt;
+}
+
+.tabelle { width: 100%; border-collapse: collapse; margin-top: 12px; table-layout: fixed; }
+.tabelle th { padding: 6px; font-size: 13pt; border: 2px solid #000; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.tabelle th .farbe { display: inline-block; width: 14px; height: 14px; border-radius: 50%; vertical-align: middle; margin-right: 6px; border: 1px solid #000; }
+.tabelle td { border-left: 2px solid #000; border-right: 2px solid #000; border-bottom: 1px solid #999; height: 11mm; padding: 0 8px; }
+.tabelle tr:last-child td { border-bottom: 2px solid #000; }
+
+.saetze { list-style: none; padding: 0; margin: 0; }
+.saetze li { display: flex; align-items: center; gap: 12px; padding: 7px 0; border-bottom: 1px solid #ddd; }
+.saetze .satz { flex: 1; }
+.saetze .satz u { font-weight: 700; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.auswahl { display: flex; gap: 6px; }
+.auswahl span { display: inline-block; width: 2em; height: 2em; line-height: 1.9em; text-align: center; border: 1px solid #999; border-radius: 50%; font-size: 10pt; font-weight: 700; }
+.legende { font-size: 10pt; color: #333; margin: 4px 0 8px; }
+
+.loesung-text { color: #c0392b; font-style: italic; }
+.auswahl span.kreis { border: 3px solid #c0392b; color: #c0392b; }
+
+.fusszeile-blatt { margin-top: 20px; font-size: 9pt; color: #666; text-align: center; }
+
+@page { size: A4; margin: 0; }
+
+@media print {
+  html, body { background: #fff; }
+  .nicht-drucken { display: none !important; }
+  .blatt { margin: 0; box-shadow: none; width: 210mm; max-width: none; min-height: auto; }
+}

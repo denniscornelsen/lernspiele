@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wortarten-Fabrik · Knobelkiste</title>
+  <link rel="icon" href="../../gemeinsam/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../gemeinsam/stil.css">
+  <link rel="stylesheet" href="spiel.css">
+</head>
+<body>
+  <main class="seite">
+    <header class="kopf">
+      <a class="logo" href="../../index.html" id="start-link">← Knobelkiste</a>
+      <h1>Wortarten-Fabrik</h1>
+      <a class="knopf klein" id="arbeitsblatt-link" href="arbeitsblatt.html">Arbeitsblatt</a>
+      <button class="knopf klein" id="farben-knopf" type="button">Farben</button>
+    </header>
+
+    <!-- Stufenwahl -->
+    <section id="stufenwahl">
+      <div class="halle" id="maschinen" aria-label="Deine Fabrik"></div>
+      <p class="anleitung">Wörter kommen auf dem Band. Sortiere jedes Wort in die richtige Kiste. Wähle eine Stufe:</p>
+      <div class="kacheln" id="stufen"></div>
+    </section>
+
+    <!-- Spiel -->
+    <section id="spiel" class="versteckt">
+      <div class="leiste">
+        <span id="fortschritt">Wort 1 von 10</span>
+        <span class="punkte" id="punkte"></span>
+        <button class="knopf klein" id="abbrechen" type="button">Stufe wechseln</button>
+      </div>
+
+      <div class="band-bereich">
+        <div class="band" id="band"></div>
+        <div class="karte" id="karte" aria-live="polite">
+          <span id="karte-text"></span>
+        </div>
+        <button class="knopf klein vorlesen versteckt" id="vorlesen" type="button" aria-label="Vorlesen"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Vorlesen</button>
+      </div>
+
+      <p class="frage" id="frage">Welche Wortart ist das?</p>
+      <div class="kisten" id="kisten"></div>
+      <div class="hinweis versteckt" id="hinweis" role="status"></div>
+    </section>
+
+    <!-- Ergebnis -->
+    <section id="ergebnis" class="versteckt">
+      <div class="ergebnis-karte">
+        <div class="ergebnis-sterne" id="ergebnis-sterne"></div>
+        <h2 id="ergebnis-titel"></h2>
+        <p id="ergebnis-text"></p>
+        <p class="ergebnis-knoepfe">
+          <button class="knopf haupt" id="nochmal" type="button">Nochmal</button>
+          <button class="knopf" id="andere-stufe" type="button">Andere Stufe</button>
+        </p>
+      </div>
+    </section>
+
+    <p class="fehlermeldung versteckt" id="fehlermeldung"></p>
+  </main>
+
+  <script src="../../gemeinsam/app.js"></script>
+  <script src="spiel.js"></script>
+</body>
+</html>
