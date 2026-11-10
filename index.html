@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knobelkiste</title>
+  <link rel="icon" href="gemeinsam/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="gemeinsam/stil.css">
+  <style>
+    .start-kopf { text-align: center; margin: 24px 0 28px; }
+    .start-kopf h1 { font-size: 2.6rem; margin: 0; color: var(--akzent-dunkel); }
+    .start-kopf p { margin: 4px 0 0; color: var(--text-leise); }
+    .kiste { width: 72px; height: 72px; }
+    h2 { margin: 28px 0 12px; }
+    h3 { margin: 20px 0 10px; color: var(--text-leise); font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; }
+    .spiel-links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+    .zurueck { margin-bottom: 8px; }
+    .fusszeile { margin-top: 48px; color: var(--text-leise); font-size: 0.8rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <main class="seite">
+    <header class="start-kopf">
+      <img class="kiste" src="gemeinsam/icon.svg" alt="">
+      <h1 id="name">Knobelkiste</h1>
+      <p id="untertitel">Lernspiele für die Grundschule</p>
+    </header>
+
+    <section id="klassenwahl">
+      <h2>Welche Klasse bist du?</h2>
+      <div class="kacheln" id="klassen"></div>
+    </section>
+
+    <section id="spielwahl" class="versteckt">
+      <button class="knopf klein zurueck" id="zurueck" type="button">← Andere Klasse</button>
+      <h2 id="klassen-titel"></h2>
+      <div id="spiele"></div>
+    </section>
+
+    <p class="fusszeile">Ohne Anmeldung, ohne Werbung. Sterne werden nur auf diesem Gerät gespeichert.</p>
+  </main>
+
+  <script src="gemeinsam/app.js"></script>
+  <script>
+    (async function () {
+      "use strict";
+      const K = window.Knobelkiste;
+      const katalog = await K.ladeJSON("katalog.json");
+
+      document.getElementById("name").textContent = katalog.name;
+      document.getElementById("untertitel").textContent = katalog.untertitel;
+
+      const klassenEl = document.getElementById("klassen");
+      katalog.klassen.forEach(function (k) {
+        const anzahl = katalog.spiele.filter(function (s) { return s.klassen.indexOf(k) >= 0; }).length;
+        const kachel = document.createElement("button");
+        kachel.type = "button";
+        kachel.className = "kachel";
+        kachel.innerHTML = '<span class="gross">' + k + '</span><span class="titel">Klasse ' + k + "</span>" +
+          '<span class="info">' + (anzahl ? anzahl + (anzahl === 1 ? " Spiel" : " Spiele") : "kommt bald") + "</span>";
+        if (anzahl) {
+          kachel.addEventListener("click", function () { location.hash = "klasse-" + k; });
+        } else {
+          kachel.setAttribute("aria-disabled", "true");
+        }
+        klassenEl.appendChild(kachel);
+      });
+
+      function zeigeKlasse(k) {
+        document.getElementById("klassenwahl").classList.add("versteckt");
+        document.getElementById("spielwahl").classList.remove("versteckt");
+        document.getElementById("klassen-titel").textContent = "Klasse " + k;
+        const ziel = document.getElementById("spiele");
+        ziel.innerHTML = "";
+
+        Object.keys(katalog.faecher).forEach(function (fachId) {
+          const fach = katalog.faecher[fachId];
+          const spieleImFach = katalog.spiele.filter(function (s) {
+            return s.fach === fachId && s.klassen.indexOf(k) >= 0;
+          });
+          if (!spieleImFach.length) return;
+          const h2 = document.createElement("h2");
+          h2.textContent = fach.name;
+          ziel.appendChild(h2);
+
+          Object.keys(fach.bereiche).forEach(function (bereichId) {
+            const spiele = spieleImFach.filter(function (s) { return s.bereich === bereichId; });
+            if (!spiele.length) return;
+            const h3 = document.createElement("h3");
+            h3.textContent = fach.bereiche[bereichId];
+            ziel.appendChild(h3);
+            const kacheln = document.createElement("div");
+            kacheln.className = "kacheln";
+            spiele.forEach(function (s) {
+              const karte = document.createElement("div");
+              karte.className = "kachel";
+              const adresse = s.ordner + "?klasse=" + k;
+              karte.innerHTML = '<span class="titel">' + s.titel + "</span>" +
+                '<span class="info">' + s.beschreibung + "</span>" +
+                '<span class="spiel-links"><a class="knopf haupt" href="' + adresse + '">Spielen</a>' +
+                (s.arbeitsblatt ? '<a class="knopf klein" href="' + s.ordner + "arbeitsblatt.html?klasse=" + k + '">Arbeitsblatt</a>' : "") +
+                "</span>";
+              kacheln.appendChild(karte);
+            });
+            ziel.appendChild(kacheln);
+          });
+        });
+      }
+
+      function zeigeKlassenwahl() {
+        document.getElementById("spielwahl").classList.add("versteckt");
+        document.getElementById("klassenwahl").classList.remove("versteckt");
+      }
+
+      function route() {
+        const treffer = location.hash.match(/^#klasse-(\d)$/);
+        if (treffer) zeigeKlasse(Number(treffer[1])); else zeigeKlassenwahl();
+      }
+
+      document.getElementById("zurueck").addEventListener("click", function () { location.hash = ""; });
+      window.addEventListener("hashchange", route);
+      route();
+    })();
+  </script>
+</body>
+</html>

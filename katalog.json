@@ -1,0 +1,28 @@
+{
+  "name": "Knobelkiste",
+  "untertitel": "Lernspiele für die Grundschule",
+  "klassen": [1, 2, 3, 4],
+  "faecher": {
+    "deutsch": {
+      "name": "Deutsch",
+      "bereiche": {
+        "lesen": "Lesen",
+        "schreiben": "Schreiben",
+        "sprechen-zuhoeren": "Sprechen und Zuhören",
+        "sprache-untersuchen": "Sprache untersuchen"
+      }
+    }
+  },
+  "spiele": [
+    {
+      "id": "wortarten-fabrik",
+      "titel": "Wortarten-Fabrik",
+      "beschreibung": "Sortiere Nomen, Verben und Adjektive in die richtige Kiste.",
+      "fach": "deutsch",
+      "bereich": "sprache-untersuchen",
+      "ordner": "spiele/wortarten-fabrik/",
+      "klassen": [4],
+      "arbeitsblatt": true
+    }
+  ]
+}
