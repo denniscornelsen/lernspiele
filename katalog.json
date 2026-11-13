@@ -32,6 +32,18 @@
       "arbeitsblatt": true
     },
     {
+      "id": "geschichten-werkstatt",
+      "titel": "Geschichten-Werkstatt",
+      "beschreibung": "Geschichten ordnen, wörtliche Rede setzen und treffende Wörter finden.",
+      "fach": "deutsch",
+      "bereich": "schreiben",
+      "ordner": "spiele/geschichten-werkstatt/",
+      "klassen": [
+        4
+      ],
+      "arbeitsblatt": true
+    },
+    {
       "id": "wortarten-fabrik",
       "titel": "Wortarten-Fabrik",
       "beschreibung": "Sortiere Nomen, Verben und Adjektive in die richtige Kiste.",

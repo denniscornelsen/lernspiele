@@ -1,0 +1,108 @@
+{
+  "klasse": 4,
+  "raeume": [
+    {
+      "nummer": 1,
+      "typ": "reihenfolge",
+      "name": "Geschichten ordnen",
+      "beschreibung": "Bringe die Sätze in die richtige Reihenfolge.",
+      "tipp": "Die Einleitung sagt, wer, wann und wo. Achte auf Wörter wie zuerst, dann, plötzlich und am Ende.",
+      "proRunde": 3,
+      "aufgaben": [
+        {
+          "titel": "Das Picknick",
+          "saetze": [
+            "Am Samstag fuhr Familie Yilmaz mit den Fahrrädern zum See.",
+            "Dort breiteten sie eine große Decke auf der Wiese aus.",
+            "Plötzlich zogen dunkle Wolken auf, und es fing an zu regnen.",
+            "Schnell packten alle ihre Sachen und stellten sich unter einen Baum.",
+            "Als die Sonne wieder schien, aßen sie fröhlich ihr Picknick."
+          ]
+        },
+        {
+          "titel": "Der neue Mitschüler",
+          "saetze": [
+            "Am ersten Schultag stand ein neuer Junge allein auf dem Schulhof.",
+            "Lea ging zu ihm und fragte nach seinem Namen.",
+            "Er hieß Karim und war gerade erst nach Bielefeld gezogen.",
+            "In der Pause zeigte Lea ihm den Fußballplatz und die Kletterwand.",
+            "Seit diesem Tag sind die beiden die besten Freunde."
+          ]
+        },
+        {
+          "titel": "Der Geburtstagskuchen",
+          "saetze": [
+            "Heute hatte Mama Geburtstag, deshalb wollte Paul einen Kuchen backen.",
+            "Zuerst suchte er Mehl, Eier, Zucker und Butter zusammen.",
+            "Dann rührte er alles in einer großen Schüssel zu einem Teig.",
+            "Danach schob er die Form für eine Stunde in den Backofen.",
+            "Am Abend freute sich Mama riesig über den leckeren Kuchen."
+          ]
+        },
+        {
+          "titel": "Wo ist Mohrchen?",
+          "saetze": [
+            "Eines Morgens war Mohrchen, die Katze von Jana, verschwunden.",
+            "Jana suchte im ganzen Haus, aber sie fand sie nirgends.",
+            "Dann hängte sie mit ihrem Bruder Zettel in der Nachbarschaft auf.",
+            "Am Nachmittag klingelte das Telefon, und eine Nachbarin meldete sich.",
+            "Mohrchen hatte sich in ihrer Garage versteckt und kam glücklich nach Hause."
+          ]
+        },
+        {
+          "titel": "Der Schneemann",
+          "saetze": [
+            "In der Nacht hatte es zum ersten Mal in diesem Winter geschneit.",
+            "Nach dem Frühstück zogen Ben und Emma ihre warmen Sachen an und liefen nach draußen.",
+            "Gemeinsam rollten sie drei große Schneekugeln.",
+            "Dann setzten sie die Kugeln aufeinander und steckten eine Möhre als Nase hinein.",
+            "Am Ende stand ein prächtiger Schneemann im Garten."
+          ]
+        }
+      ]
+    },
+    {
+      "nummer": 2,
+      "typ": "rede",
+      "name": "Wörtliche Rede",
+      "beschreibung": "Setze die fehlenden Satzzeichen.",
+      "tipp": "Begleitsatz vorne: Tim sagt: „Hallo.“ Begleitsatz hinten: „Hallo“, sagt Tim. Bei Fragen und Ausrufen bleiben ? und ! in den Anführungszeichen.",
+      "proRunde": 6,
+      "zeichen": ["„", "“", ":", ",", ".", "!", "?"],
+      "aufgaben": [
+        { "satz": "Mia sagt{:} {„}Ich habe Hunger{.}{“}" },
+        { "satz": "Opa fragt{:} {„}Wer kommt mit in den Garten{?}{“}" },
+        { "satz": "Der Trainer ruft{:} {„}Lauf schneller{!}{“}" },
+        { "satz": "{„}Ich bin müde{“}{,} gähnt Ben." },
+        { "satz": "{„}Wo ist mein Schuh{?}{“}{,} fragt Lara." },
+        { "satz": "{„}Pass auf{!}{“}{,} schreit Papa." },
+        { "satz": "Die Lehrerin erklärt{:} {„}Heute schreiben wir eine Geschichte{.}{“}" },
+        { "satz": "{„}Das war ein toller Tag{“}{,} sagt Emil." },
+        { "satz": "Ayla flüstert{:} {„}Das ist ein Geheimnis{.}{“}" },
+        { "satz": "{„}Darf ich mitspielen{?}{“}{,} fragt der neue Junge." }
+      ]
+    },
+    {
+      "nummer": 3,
+      "typ": "woerter",
+      "name": "Treffende Wörter",
+      "beschreibung": "Ersetze das langweilige Wort durch ein besseres.",
+      "tipp": "Lies den ganzen Satz. Welches Wort passt genau zu dem, was passiert?",
+      "proRunde": 6,
+      "aufgaben": [
+        { "satz": "„Psst, das Baby schläft“, [sagte] Mama leise.", "optionen": ["flüsterte", "brüllte", "lachte"] },
+        { "satz": "„Hilfe, ich stecke fest!“, [sagte] Tim laut.", "optionen": ["schrie", "flüsterte", "murmelte"] },
+        { "satz": "„Wie spät ist es?“, [sagte] Lina.", "optionen": ["fragte", "antwortete", "befahl"] },
+        { "satz": "„Wir haben gewonnen!“, [sagte] das ganze Team.", "optionen": ["jubelte", "weinte", "flüsterte"] },
+        { "satz": "Die Schnecke [ging] langsam über das Salatblatt.", "optionen": ["kroch", "raste", "sprang"] },
+        { "satz": "Der Hund [ging] schnell hinter dem Ball her.", "optionen": ["rannte", "schlich", "kroch"] },
+        { "satz": "Der Dieb [ging] ganz leise durch das dunkle Haus.", "optionen": ["schlich", "stampfte", "hüpfte"] },
+        { "satz": "Das Pferd [lief] schnell über die Wiese.", "optionen": ["galoppierte", "kroch", "schwamm"] },
+        { "satz": "Wir [machten] am Strand eine Sandburg.", "optionen": ["bauten", "aßen", "lasen"] },
+        { "satz": "Mama [machte] eine leckere Gemüsesuppe.", "optionen": ["kochte", "malte", "schrieb"] },
+        { "satz": "Der Sonnenuntergang am Meer war [schön].", "optionen": ["herrlich", "langweilig", "eklig"] },
+        { "satz": "Nach dem langen Wandertag waren alle sehr [müde].", "optionen": ["erschöpft", "munter", "ausgeschlafen"] }
+      ]
+    }
+  ]
+}
