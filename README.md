@@ -9,6 +9,7 @@ Gedacht für die Hausaufgabenhilfe der Arche Bielefeld. Wir starten mit Deutsch 
 | --- | --- | --- | --- | --- |
 | Wortarten-Fabrik | Deutsch | Sprache untersuchen | 4 | ja, mit Lösungsblatt |
 | Lese-Expedition | Deutsch | Lesen | 4 | ja, mit Lösungsblatt |
+| Geschichten-Werkstatt | Deutsch | Schreiben | 4 | ja, mit Lösungsblatt |
 
 ## So ist das Projekt aufgebaut
 
@@ -38,6 +39,11 @@ Die Texte der Lese-Expedition stehen in `inhalte/deutsch/klasse-4/lese-expeditio
 einen Text (Absätze), Fragen und eine Schreibaufgabe fürs Arbeitsblatt. Fragetypen: `auswahl`
 (Nummer der richtigen Antwort bei `richtig`, gezählt ab 0), `richtigfalsch` (`true` oder `false`) und `finden`
 (bei `loesung` ein Stück aus dem gesuchten Satz). `absatz` gibt an, in welchem Absatz die Antwort steht (gezählt ab 0).
+
+Die Aufgaben der Geschichten-Werkstatt stehen in `inhalte/deutsch/klasse-4/geschichten-werkstatt.json`.
+Geschichten ordnen: die Sätze in der richtigen Reihenfolge eintragen. Wörtliche Rede: die gesuchten Satzzeichen in
+geschweiften Klammern, z. B. `Mia sagt{:} {„}Hallo{.}{“}`. Treffende Wörter: das langweilige Wort in eckigen Klammern,
+bei `optionen` steht das richtige Wort immer zuerst (im Spiel wird gemischt).
 
 Nach einer Änderung bitte in `sw.js` die Zahl bei `VERSION` um eins erhöhen, damit die Laptops die neue Version laden.
 

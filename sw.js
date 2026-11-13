@@ -5,7 +5,7 @@
  * Hintergrund die neueste (beim nächsten Öffnen sichtbar).
  * Bei neuen Dateien: VERSION erhöhen und Datei in DATEIEN eintragen.
  */
-const VERSION = "knobelkiste-v2";
+const VERSION = "knobelkiste-v3";
 const DATEIEN = [
   "./",
   "index.html",
@@ -28,7 +28,14 @@ const DATEIEN = [
   "spiele/lese-expedition/arbeitsblatt.html",
   "spiele/lese-expedition/arbeitsblatt.css",
   "spiele/lese-expedition/arbeitsblatt.js",
+  "spiele/geschichten-werkstatt/index.html",
+  "spiele/geschichten-werkstatt/spiel.css",
+  "spiele/geschichten-werkstatt/spiel.js",
+  "spiele/geschichten-werkstatt/arbeitsblatt.html",
+  "spiele/geschichten-werkstatt/arbeitsblatt.css",
+  "spiele/geschichten-werkstatt/arbeitsblatt.js",
   "inhalte/deutsch/klasse-4/wortarten.json",
+  "inhalte/deutsch/klasse-4/geschichten-werkstatt.json",
   "inhalte/deutsch/klasse-4/lese-expedition.json"
 ];
 

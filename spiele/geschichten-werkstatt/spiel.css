@@ -1,0 +1,84 @@
+.anleitung { font-size: 1.1rem; }
+.raum-kachel { display: flex; flex-direction: column; align-items: flex-start; }
+.raum-kachel .symbol { font-size: 2rem; font-weight: 700; color: var(--akzent-dunkel); line-height: 1; margin: 6px 0; }
+
+.leiste { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; font-weight: 700; }
+.leiste #fortschritt { flex: 1 1 auto; }
+
+.werkbank {
+  background: var(--flaeche); border: 3px solid var(--rand); border-radius: var(--radius); padding: 20px 22px;
+}
+.werkbank h2 { margin: 0 0 4px; }
+.auftrag { margin: 0 0 16px; color: var(--text-leise); }
+.knoepfe { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0 0; }
+
+.hinweis { margin-top: 16px; background: #fff8e1; border: 3px solid #f2b705; border-radius: 14px; padding: 12px 16px; }
+.hinweis.gut { background: #e6f4ea; border-color: var(--gut); }
+.hinweis.erklaerung { background: #e8f1fd; border-color: #2f6fd6; }
+
+/* Geschichten ordnen */
+.ordnen { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.ordnen h3 { margin: 0 0 8px; font-size: 1rem; color: var(--text-leise); }
+.stapel, .plaetze { display: grid; gap: 10px; align-content: start; }
+.satzkarte {
+  font: inherit; text-align: left; background: #fffdf7; color: var(--text);
+  border: 3px solid var(--rand); border-radius: 12px; padding: 10px 14px; cursor: pointer;
+  box-shadow: var(--schatten); min-height: 52px;
+}
+.satzkarte:hover { border-color: var(--akzent); }
+.satzkarte:focus-visible { outline: 3px solid var(--akzent); outline-offset: 2px; }
+.platz {
+  display: grid; grid-template-columns: 7.5em 1fr; gap: 10px; align-items: center;
+}
+.platz .etikett { font-size: 0.8rem; font-weight: 700; color: var(--text-leise); text-align: right; }
+.platz .leer {
+  border: 3px dashed var(--rand); border-radius: 12px; min-height: 52px; display: flex; align-items: center;
+  padding: 0 14px; color: #b0a48c; font-size: 0.9rem;
+}
+.platz .satzkarte.richtig { border-color: var(--gut); background: #e6f4ea; cursor: default; }
+.platz .satzkarte.falsch { border-color: var(--fehler); background: #fdecea; }
+
+/* Wörtliche Rede */
+.rede-satz { font-size: 1.5rem; line-height: 2.4; }
+.luecke {
+  font: inherit; font-weight: 700; min-width: 1.6em; height: 1.6em; line-height: 1;
+  border: 3px dashed #b0a48c; border-radius: 8px; background: #fff; color: var(--akzent-dunkel);
+  cursor: pointer; padding: 0 4px; vertical-align: middle; margin: 0 1px;
+}
+.luecke.aktiv { border-style: solid; border-color: var(--akzent); background: #fff3e6; }
+.luecke.richtig { border: 3px solid var(--gut); background: #e6f4ea; color: var(--gut); }
+.luecke.falsch { border: 3px solid var(--fehler); background: #fdecea; color: var(--fehler); }
+.zeichen-leiste { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+.zeichen-knopf {
+  font: inherit; font-size: 1.8rem; font-weight: 700; width: 64px; height: 64px; border-radius: 12px;
+  border: 3px solid var(--rand); background: #fff; cursor: pointer; box-shadow: var(--schatten);
+}
+.zeichen-knopf:hover { border-color: var(--akzent); }
+.zeichen-knopf:focus-visible { outline: 3px solid var(--akzent); outline-offset: 2px; }
+
+/* Treffende Wörter */
+.wort-satz { font-size: 1.4rem; line-height: 1.8; margin: 0 0 16px; }
+.wort-satz .alt { text-decoration: line-through; text-decoration-color: var(--fehler); text-decoration-thickness: 3px; color: var(--text-leise); }
+.wort-satz .neu { background: #fff3c4; border-bottom: 4px solid #e0a800; padding: 0 6px; font-weight: 700; display: inline-block; min-width: 4em; text-align: center; }
+.optionen { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+.option {
+  font: inherit; font-size: 1.2rem; font-weight: 700; background: #fff; color: var(--text);
+  border: 3px solid var(--rand); border-radius: 12px; padding: 14px; cursor: pointer; box-shadow: var(--schatten);
+}
+.option:hover { border-color: var(--akzent); }
+.option.richtig { border-color: var(--gut); background: #e6f4ea; }
+.option.falsch { border-color: var(--fehler); background: #fdecea; }
+.option:disabled { cursor: default; }
+
+.ergebnis-karte { background: var(--flaeche); border: 3px solid var(--rand); border-radius: var(--radius); padding: 32px 16px; text-align: center; }
+.ergebnis-sterne { font-size: 4rem; line-height: 1; }
+.ergebnis-knoepfe { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.fehlermeldung { color: var(--fehler); font-weight: 700; }
+
+@media (max-width: 760px) {
+  .ordnen { grid-template-columns: 1fr; }
+  .platz { grid-template-columns: 1fr; gap: 2px; }
+  .platz .etikett { text-align: left; }
+  .rede-satz { font-size: 1.2rem; }
+  .zeichen-knopf { width: 54px; height: 54px; }
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geschichten-Werkstatt · Knobelkiste</title>
+  <link rel="icon" href="../../gemeinsam/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../gemeinsam/stil.css">
+  <link rel="stylesheet" href="spiel.css">
+</head>
+<body>
+  <main class="seite">
+    <header class="kopf">
+      <a class="logo" href="../../index.html" id="start-link">← Knobelkiste</a>
+      <h1>Geschichten-Werkstatt</h1>
+      <a class="knopf klein" id="arbeitsblatt-link" href="arbeitsblatt.html">Arbeitsblatt</a>
+    </header>
+
+    <!-- Raumwahl -->
+    <section id="raumwahl">
+      <p class="anleitung">In der Werkstatt werden Geschichten gebaut. Welchen Raum willst du besuchen?</p>
+      <div class="kacheln" id="raeume"></div>
+    </section>
+
+    <!-- Aufgabe -->
+    <section id="aufgabe" class="versteckt">
+      <div class="leiste">
+        <span id="fortschritt"></span>
+        <button class="knopf klein" id="tipp-knopf" type="button">Tipp</button>
+        <button class="knopf klein" id="zur-wahl" type="button">Anderer Raum</button>
+      </div>
+      <div class="werkbank">
+        <h2 id="aufgabe-titel"></h2>
+        <p class="auftrag" id="auftrag"></p>
+        <div id="inhalt"></div>
+        <div class="hinweis versteckt" id="hinweis" role="status" aria-live="polite"></div>
+        <p class="knoepfe">
+          <button class="knopf haupt versteckt" id="pruefen" type="button">Prüfen</button>
+          <button class="knopf haupt versteckt" id="weiter" type="button">Weiter</button>
+        </p>
+      </div>
+    </section>
+
+    <!-- Ergebnis -->
+    <section id="ergebnis" class="versteckt">
+      <div class="ergebnis-karte">
+        <div class="ergebnis-sterne" id="ergebnis-sterne"></div>
+        <h2 id="ergebnis-titel"></h2>
+        <p id="ergebnis-text"></p>
+        <p class="ergebnis-knoepfe">
+          <button class="knopf haupt" id="nochmal" type="button">Nochmal</button>
+          <button class="knopf" id="andere" type="button">Anderer Raum</button>
+        </p>
+      </div>
+    </section>
+
+    <p class="fehlermeldung versteckt" id="fehlermeldung"></p>
+  </main>
+
+  <script src="../../gemeinsam/app.js"></script>
+  <script src="spiel.js"></script>
+</body>
+</html>

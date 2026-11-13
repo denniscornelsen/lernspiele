@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arbeitsblatt Geschichten-Werkstatt · Knobelkiste</title>
+  <link rel="icon" href="../../gemeinsam/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../gemeinsam/stil.css">
+  <link rel="stylesheet" href="arbeitsblatt.css">
+</head>
+<body>
+  <div class="steuerung nicht-drucken">
+    <a class="logo" href="index.html" id="zurueck-link">← Zum Spiel</a>
+    <label>Raum
+      <select id="raum"></select>
+    </label>
+    <label>Blatt-Nr.
+      <input id="nummer" type="number" min="1000" max="9999" inputmode="numeric">
+    </label>
+    <button class="knopf klein" id="neu" type="button">Neues Blatt</button>
+    <label class="schalter"><input id="loesung" type="checkbox"> Lösungen zeigen</label>
+    <button class="knopf haupt klein" id="drucken" type="button">Drucken</button>
+  </div>
+  <p class="tipp nicht-drucken">Tipp: Die Blatt-Nr. steht oben rechts auf dem Blatt. Gebt sie später hier ein und schaltet „Lösungen zeigen“ an, dann erscheint genau das passende Lösungsblatt.</p>
+
+  <article class="blatt" id="blatt"></article>
+
+  <script src="../../gemeinsam/app.js"></script>
+  <script src="arbeitsblatt.js"></script>
+</body>
+</html>
