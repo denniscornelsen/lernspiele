@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arbeitsblatt Lese-Expedition · Knobelkiste</title>
+  <link rel="icon" href="../../gemeinsam/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../gemeinsam/stil.css">
+  <link rel="stylesheet" href="arbeitsblatt.css">
+</head>
+<body>
+  <div class="steuerung nicht-drucken">
+    <a class="logo" href="index.html" id="zurueck-link">← Zum Spiel</a>
+    <label>Station
+      <select id="station"></select>
+    </label>
+    <label class="schalter"><input id="loesung" type="checkbox"> Lösungen zeigen</label>
+    <button class="knopf haupt klein" id="drucken" type="button">Drucken</button>
+  </div>
+  <p class="tipp nicht-drucken">Tipp: Jede Station ergibt ein Blatt mit Text und Fragen. Mit „Lösungen zeigen“ erscheint das passende Lösungsblatt.</p>
+
+  <article class="blatt" id="blatt"></article>
+
+  <script src="../../gemeinsam/app.js"></script>
+  <script src="text.js"></script>
+  <script src="arbeitsblatt.js"></script>
+</body>
+</html>

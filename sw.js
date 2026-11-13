@@ -5,7 +5,7 @@
  * Hintergrund die neueste (beim nächsten Öffnen sichtbar).
  * Bei neuen Dateien: VERSION erhöhen und Datei in DATEIEN eintragen.
  */
-const VERSION = "knobelkiste-v1";
+const VERSION = "knobelkiste-v2";
 const DATEIEN = [
   "./",
   "index.html",
@@ -21,7 +21,15 @@ const DATEIEN = [
   "spiele/wortarten-fabrik/arbeitsblatt.html",
   "spiele/wortarten-fabrik/arbeitsblatt.css",
   "spiele/wortarten-fabrik/arbeitsblatt.js",
-  "inhalte/deutsch/klasse-4/wortarten.json"
+  "spiele/lese-expedition/index.html",
+  "spiele/lese-expedition/spiel.css",
+  "spiele/lese-expedition/spiel.js",
+  "spiele/lese-expedition/text.js",
+  "spiele/lese-expedition/arbeitsblatt.html",
+  "spiele/lese-expedition/arbeitsblatt.css",
+  "spiele/lese-expedition/arbeitsblatt.js",
+  "inhalte/deutsch/klasse-4/wortarten.json",
+  "inhalte/deutsch/klasse-4/lese-expedition.json"
 ];
 
 self.addEventListener("install", function (event) {

@@ -8,6 +8,7 @@ Gedacht für die Hausaufgabenhilfe der Arche Bielefeld. Wir starten mit Deutsch 
 | Spiel | Fach | Bereich | Klassen | Arbeitsblatt |
 | --- | --- | --- | --- | --- |
 | Wortarten-Fabrik | Deutsch | Sprache untersuchen | 4 | ja, mit Lösungsblatt |
+| Lese-Expedition | Deutsch | Lesen | 4 | ja, mit Lösungsblatt |
 
 ## So ist das Projekt aufgebaut
 
@@ -32,6 +33,11 @@ Die Wörter der Wortarten-Fabrik stehen in `inhalte/deutsch/klasse-4/wortarten.j
   `{ "satz": "Das [Laufen] macht mir Spaß.", "wortart": "nomen" }`.
 - Die Standardfarben der Wortarten stehen bei `"farbe"`. Im Spiel kann man sie über den Knopf „Farben“
   an die Farben der eigenen Schule anpassen.
+
+Die Texte der Lese-Expedition stehen in `inhalte/deutsch/klasse-4/lese-expedition.json`. Jede Station hat
+einen Text (Absätze), Fragen und eine Schreibaufgabe fürs Arbeitsblatt. Fragetypen: `auswahl`
+(Nummer der richtigen Antwort bei `richtig`, gezählt ab 0), `richtigfalsch` (`true` oder `false`) und `finden`
+(bei `loesung` ein Stück aus dem gesuchten Satz). `absatz` gibt an, in welchem Absatz die Antwort steht (gezählt ab 0).
 
 Nach einer Änderung bitte in `sw.js` die Zahl bei `VERSION` um eins erhöhen, damit die Laptops die neue Version laden.
 

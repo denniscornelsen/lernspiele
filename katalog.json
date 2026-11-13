@@ -1,7 +1,12 @@
 {
   "name": "Knobelkiste",
   "untertitel": "Lernspiele für die Grundschule",
-  "klassen": [1, 2, 3, 4],
+  "klassen": [
+    1,
+    2,
+    3,
+    4
+  ],
   "faecher": {
     "deutsch": {
       "name": "Deutsch",
@@ -15,13 +20,27 @@
   },
   "spiele": [
     {
+      "id": "lese-expedition",
+      "titel": "Lese-Expedition",
+      "beschreibung": "Reise von Station zu Station. Wer genau liest, findet alle Antworten.",
+      "fach": "deutsch",
+      "bereich": "lesen",
+      "ordner": "spiele/lese-expedition/",
+      "klassen": [
+        4
+      ],
+      "arbeitsblatt": true
+    },
+    {
       "id": "wortarten-fabrik",
       "titel": "Wortarten-Fabrik",
       "beschreibung": "Sortiere Nomen, Verben und Adjektive in die richtige Kiste.",
       "fach": "deutsch",
       "bereich": "sprache-untersuchen",
       "ordner": "spiele/wortarten-fabrik/",
-      "klassen": [4],
+      "klassen": [
+        4
+      ],
       "arbeitsblatt": true
     }
   ]
