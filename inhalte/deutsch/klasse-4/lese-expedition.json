@@ -1,0 +1,119 @@
+{
+  "klasse": 4,
+  "stationen": [
+    {
+      "nummer": 1,
+      "ort": "Wald",
+      "titel": "Der Igel",
+      "art": "Sachtext",
+      "absaetze": [
+        "Der Igel ist ein kleines Säugetier. Auf seinem Rücken trägt er etwa 7000 Stacheln. Wenn ein Feind kommt, rollt er sich zu einer stacheligen Kugel zusammen.",
+        "Tagsüber schläft der Igel in einem Versteck, zum Beispiel unter einer Hecke. Erst in der Dämmerung geht er auf Futtersuche. Er frisst Käfer, Regenwürmer und Schnecken.",
+        "Im Herbst frisst sich der Igel eine dicke Fettschicht an. Von November bis März hält er Winterschlaf in einem Nest aus Laub. Deshalb ist ein Laubhaufen im Garten ein gutes Zuhause für ihn.",
+        "Viele Menschen wollen Igeln helfen und stellen ihnen Milch hin. Das ist aber gefährlich, denn Igel bekommen davon Bauchschmerzen. Besser ist eine flache Schale mit Wasser."
+      ],
+      "fragen": [
+        { "typ": "auswahl", "frage": "Was macht der Igel, wenn ein Feind kommt?", "antworten": ["Er läuft schnell weg.", "Er rollt sich zu einer Kugel zusammen.", "Er versteckt sich im Wasser."], "richtig": 1, "absatz": 0 },
+        { "typ": "auswahl", "frage": "Wann geht der Igel auf Futtersuche?", "antworten": ["Am Mittag", "Am frühen Morgen", "In der Dämmerung"], "richtig": 2, "absatz": 1 },
+        { "typ": "richtigfalsch", "aussage": "Igel sollte man mit Milch füttern.", "richtig": false, "absatz": 3 },
+        { "typ": "finden", "auftrag": "Finde den Satz, der verrät, wie lange der Winterschlaf dauert.", "loesung": "Von November bis März", "absatz": 2 }
+      ],
+      "schreibaufgabe": "Wie könntest du einem Igel im Garten helfen? Schreibe zwei Sätze."
+    },
+    {
+      "nummer": 2,
+      "ort": "Fluss",
+      "titel": "Der Biber",
+      "art": "Sachtext",
+      "absaetze": [
+        "Der Biber ist das größte Nagetier in Europa. Er lebt an Flüssen und Seen. Mit seinem breiten, flachen Schwanz steuert er beim Schwimmen. Biber können bis zu 20 Minuten unter Wasser bleiben.",
+        "Biber sind gute Baumeister. Aus Ästen und Schlamm bauen sie eine Burg. Der Eingang liegt unter Wasser, so kommen Feinde nicht hinein. Manchmal bauen Biber auch einen Damm, damit das Wasser tief genug bleibt.",
+        "Biber fressen nur Pflanzen. Im Sommer mögen sie Kräuter und Wasserpflanzen, im Winter die Rinde von Bäumen. Mit ihren scharfen Zähnen fällen sie sogar dicke Bäume.",
+        "Die Zähne des Bibers sind orange. Sie wachsen das ganze Leben lang nach. Darum nutzen sie sich beim Nagen nie ganz ab."
+      ],
+      "fragen": [
+        { "typ": "auswahl", "frage": "Wozu braucht der Biber seinen Schwanz?", "antworten": ["Zum Steuern beim Schwimmen", "Zum Fällen von Bäumen", "Zum Graben von Höhlen"], "richtig": 0, "absatz": 0 },
+        { "typ": "auswahl", "frage": "Warum liegt der Eingang der Biberburg unter Wasser?", "antworten": ["Damit es drinnen warm bleibt", "Damit Feinde nicht hineinkommen", "Damit der Biber trinken kann"], "richtig": 1, "absatz": 1 },
+        { "typ": "richtigfalsch", "aussage": "Biber fressen Fische.", "richtig": false, "absatz": 2 },
+        { "typ": "finden", "auftrag": "Finde den Satz, der erklärt, warum sich die Zähne nie ganz abnutzen.", "loesung": "Sie wachsen das ganze Leben lang nach", "absatz": 3 }
+      ],
+      "schreibaufgabe": "Warum nennt man den Biber einen Baumeister? Erkläre es mit eigenen Worten."
+    },
+    {
+      "nummer": 3,
+      "ort": "Dorf",
+      "titel": "Das Kästchen auf dem Dachboden",
+      "art": "Geschichte",
+      "absaetze": [
+        "Es regnete schon den ganzen Morgen. Mila langweilte sich. „Geh doch mal auf den Dachboden“, sagte Oma. „Da oben gibt es viel zu entdecken.“",
+        "Auf dem Dachboden war es staubig und still. In einer Ecke stand eine alte Truhe. Ganz unten in der Truhe fand Mila ein kleines blaues Kästchen. Es war verschlossen.",
+        "Mila lief mit dem Kästchen zu Oma. Oma lächelte und holte einen winzigen Schlüssel aus ihrer Schürze. „Den habe ich seit fünfzig Jahren aufgehoben“, sagte sie.",
+        "Im Kästchen lagen bunte Murmeln und ein Foto. Darauf war ein Mädchen mit Zöpfen zu sehen. „Das bin ich“, sagte Oma, „als ich so alt war wie du.“ Mila staunte. Den Rest des Tages spielten die beiden zusammen mit den Murmeln."
+      ],
+      "fragen": [
+        { "typ": "auswahl", "frage": "Warum geht Mila auf den Dachboden?", "antworten": ["Sie sucht ihre Katze.", "Ihr ist langweilig, und Oma schlägt es vor.", "Sie soll dort aufräumen."], "richtig": 1, "absatz": 0 },
+        { "typ": "auswahl", "frage": "Wer hat den Schlüssel für das Kästchen?", "antworten": ["Mila", "Opa", "Oma"], "richtig": 2, "absatz": 2 },
+        { "typ": "richtigfalsch", "aussage": "Auf dem Foto ist Oma als Kind zu sehen.", "richtig": true, "absatz": 3 },
+        { "typ": "finden", "auftrag": "Finde den Satz, der beschreibt, wo Mila das Kästchen gefunden hat.", "loesung": "Ganz unten in der Truhe", "absatz": 1 }
+      ],
+      "schreibaufgabe": "Was würdest du gerne auf einem Dachboden finden? Schreibe drei Sätze."
+    },
+    {
+      "nummer": 4,
+      "ort": "Berge",
+      "titel": "Das Murmeltier",
+      "art": "Sachtext",
+      "absaetze": [
+        "Murmeltiere leben hoch oben in den Alpen. Sie wohnen in großen Familien zusammen. Ihr Zuhause ist ein Bau mit vielen Gängen unter der Erde.",
+        "Im Sommer sitzen die Murmeltiere gern in der Sonne. Sie fressen Gräser, Kräuter und Blumen. Ein Tier hält immer Wache. Sieht es einen Adler oder einen Fuchs, stößt es einen lauten Pfiff aus. Dann rennen alle schnell in den Bau.",
+        "Im Herbst polstern die Murmeltiere ihren Bau mit trockenem Gras aus. Dann schlafen sie etwa sechs Monate lang. In dieser Zeit schlägt ihr Herz nur ganz langsam.",
+        "Erst im Frühling wachen die Murmeltiere wieder auf. Sie sind dann sehr dünn und hungrig."
+      ],
+      "fragen": [
+        { "typ": "auswahl", "frage": "Wo wohnen Murmeltiere?", "antworten": ["In Baumhöhlen im Wald", "In einem Bau unter der Erde", "In Nestern auf Felsen"], "richtig": 1, "absatz": 0 },
+        { "typ": "auswahl", "frage": "Was passiert, wenn das Wache-Tier einen Pfiff ausstößt?", "antworten": ["Alle rennen in den Bau.", "Alle fangen an zu fressen.", "Alle legen sich in die Sonne."], "richtig": 0, "absatz": 1 },
+        { "typ": "richtigfalsch", "aussage": "Murmeltiere schlafen etwa sechs Monate lang.", "richtig": true, "absatz": 2 },
+        { "typ": "finden", "auftrag": "Finde den Satz, der verrät, wie die Murmeltiere im Frühling aussehen.", "loesung": "Sie sind dann sehr dünn und hungrig", "absatz": 3 }
+      ],
+      "schreibaufgabe": "Stell dir vor, du bist das Murmeltier, das Wache hält. Was siehst du? Schreibe zwei Sätze."
+    },
+    {
+      "nummer": 5,
+      "ort": "Meer",
+      "titel": "Ebbe und Flut",
+      "art": "Sachtext",
+      "absaetze": [
+        "An der Nordsee verändert sich der Strand jeden Tag. Mal ist das Wasser ganz nah, mal ist es weit weg. Das nennt man Ebbe und Flut.",
+        "Bei Ebbe zieht sich das Meer zurück. Dann kommt der Meeresboden zum Vorschein. Dieser nasse, schlammige Boden heißt Watt. Etwa sechs Stunden später kommt das Wasser zurück. Das ist die Flut.",
+        "Im Watt leben viele Tiere, zum Beispiel Muscheln, Krebse und Wattwürmer. Der Wattwurm hinterlässt kleine Sandhäufchen, die wie Spaghetti aussehen.",
+        "Eine Wanderung durch das Watt ist spannend. Man darf aber nie allein losgehen, denn die Flut kommt schneller, als man denkt. Darum wandert man am besten mit einer Wattführerin oder einem Wattführer."
+      ],
+      "fragen": [
+        { "typ": "auswahl", "frage": "Wie heißt der nasse Meeresboden bei Ebbe?", "antworten": ["Düne", "Watt", "Strand"], "richtig": 1, "absatz": 1 },
+        { "typ": "auswahl", "frage": "Woran erkennt man den Wattwurm?", "antworten": ["An kleinen Sandhäufchen", "An seinen Scheren", "An seiner harten Schale"], "richtig": 0, "absatz": 2 },
+        { "typ": "richtigfalsch", "aussage": "Man darf ruhig allein durch das Watt wandern.", "richtig": false, "absatz": 3 },
+        { "typ": "finden", "auftrag": "Finde den Satz, der verrät, wann das Wasser zurückkommt.", "loesung": "Etwa sechs Stunden später kommt das Wasser zurück", "absatz": 1 }
+      ],
+      "schreibaufgabe": "Warst du schon einmal am Meer? Schreibe auf, was du dort erlebt hast oder gerne erleben möchtest."
+    },
+    {
+      "nummer": 6,
+      "ort": "Stadt",
+      "titel": "Der verschwundene Fußball",
+      "art": "Geschichte",
+      "absaetze": [
+        "Jonas und Aylin wollten nach der Schule Fußball spielen. Doch der Ball war weg. „Gestern lag er noch hier im Hof“, sagte Jonas verwundert.",
+        "Die beiden suchten überall: hinter den Mülltonnen, unter der Treppe und in den Büschen. Nichts. Da entdeckte Aylin Spuren im Sand. Es waren kleine Pfotenabdrücke.",
+        "Sie folgten den Spuren bis zum Garten von Herrn Becker. Dort lag Bello, der junge Hund von Herrn Becker, in seinem Korb. Zwischen seinen Pfoten lag ein runder, schmutziger Gegenstand.",
+        "„Unser Ball!“, rief Jonas und lachte. Herr Becker entschuldigte sich. Er versprach, Bello einen eigenen Ball zu kaufen. Von da an spielten die Kinder jeden Nachmittag mit Bello zusammen."
+      ],
+      "fragen": [
+        { "typ": "auswahl", "frage": "Was entdeckt Aylin im Sand?", "antworten": ["Einen Schlüssel", "Kleine Pfotenabdrücke", "Einen zweiten Ball"], "richtig": 1, "absatz": 1 },
+        { "typ": "auswahl", "frage": "Wer hatte den Ball genommen?", "antworten": ["Herr Becker", "Ein anderes Kind", "Der Hund Bello"], "richtig": 2, "absatz": 2 },
+        { "typ": "richtigfalsch", "aussage": "Am Ende spielen die Kinder mit Bello zusammen.", "richtig": true, "absatz": 3 },
+        { "typ": "finden", "auftrag": "Finde den Satz, der zeigt, wo die Kinder gesucht haben.", "loesung": "hinter den Mülltonnen", "absatz": 1 }
+      ],
+      "schreibaufgabe": "Wie könnte die Geschichte weitergehen? Schreibe einen eigenen Schluss mit drei Sätzen."
+    }
+  ]
+}

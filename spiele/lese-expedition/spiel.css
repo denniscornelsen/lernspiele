@@ -1,0 +1,92 @@
+.anleitung { font-size: 1.1rem; }
+
+/* Landkarte */
+.landkarte {
+  background: #e4f0d0;
+  border: 3px solid var(--rand);
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.landkarte svg { display: block; width: 100%; height: auto; }
+.landkarte .station { cursor: pointer; }
+.landkarte .station:hover circle.punkt,
+.landkarte .station:focus-visible circle.punkt { stroke: var(--akzent); stroke-width: 6; }
+.landkarte .station:focus { outline: none; }
+.landkarte .fahne { animation: wehen 1.6s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom left; }
+@keyframes wehen { to { transform: skewY(-6deg); } }
+
+.stations-kachel { display: flex; flex-direction: column; align-items: flex-start; }
+
+/* Station */
+.leiste {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  margin-bottom: 12px; font-weight: 700; justify-content: space-between;
+}
+.station-raster {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 16px;
+  align-items: start;
+}
+.lesetext, .fragen-karte {
+  background: var(--flaeche);
+  border: 3px solid var(--rand);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+}
+.lesetext h2 { margin: 4px 0 12px; }
+.lesetext p { margin: 0 0 14px; line-height: 1.7; border-radius: 8px; padding: 2px 6px; margin-left: -6px; transition: background 0.3s; }
+.lesetext p.markiert { background: #fff3c4; }
+.art {
+  display: inline-block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1px; color: #fff; background: #169c9c; border-radius: 6px; padding: 2px 8px;
+}
+.art.geschichte { background: #8a4fbf; }
+
+.satz { border-radius: 4px; }
+.finden-modus .satz { cursor: pointer; border-bottom: 2px dotted #b0a48c; }
+.finden-modus .satz:hover { background: #ffe9a8; }
+.satz.falsch { background: #f8d4cf; }
+.satz.richtig { background: #cdeccd; border-bottom: 3px solid var(--gut); }
+
+.fragen-karte { position: sticky; top: 12px; }
+.fragen-kopf { display: flex; justify-content: space-between; align-items: center; gap: 8px; color: var(--text-leise); font-weight: 700; }
+.frage { font-size: 1.2rem; font-weight: 700; margin: 12px 0; }
+.antworten { display: grid; gap: 10px; }
+.antwort {
+  font: inherit; text-align: left; background: #fff; color: var(--text);
+  border: 3px solid var(--rand); border-radius: 12px; padding: 12px 14px; cursor: pointer;
+  box-shadow: var(--schatten); min-height: 52px;
+}
+.antwort:hover { border-color: var(--akzent); }
+.antwort:focus-visible { outline: 3px solid var(--akzent); outline-offset: 2px; }
+.antwort.falsch { border-color: var(--fehler); background: #fdecea; animation: schuetteln 0.4s; }
+.antwort.richtig { border-color: var(--gut); background: #e6f4ea; }
+.antwort:disabled { cursor: default; }
+.antworten.zwei { grid-template-columns: 1fr 1fr; }
+.antworten.zwei .antwort { text-align: center; font-weight: 700; }
+@keyframes schuetteln { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+
+.finden-info { color: var(--text-leise); font-size: 0.95rem; margin: 0; }
+
+.hinweis {
+  margin-top: 14px; background: #fff8e1; border: 3px solid #f2b705;
+  border-radius: 14px; padding: 12px 16px;
+}
+.hinweis.erklaerung { background: #e8f1fd; border-color: #2f6fd6; }
+#weiter { margin-top: 14px; }
+
+/* Ergebnis */
+.ergebnis-karte {
+  background: var(--flaeche); border: 3px solid var(--rand); border-radius: var(--radius);
+  padding: 32px 16px; text-align: center;
+}
+.ergebnis-sterne { font-size: 4rem; line-height: 1; }
+.ergebnis-knoepfe { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.fehlermeldung { color: var(--fehler); font-weight: 700; }
+
+@media (max-width: 760px) {
+  .station-raster { grid-template-columns: 1fr; }
+  .fragen-karte { position: static; }
+}
